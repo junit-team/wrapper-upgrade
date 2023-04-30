@@ -9,7 +9,7 @@ env:
   WRAPPER_UPGRADE_GIT_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
-  Upgrade Wrappers:
+  Gradle:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
