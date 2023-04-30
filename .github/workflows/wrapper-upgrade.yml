@@ -47,4 +47,4 @@ jobs:
           git config --global url."https://unused-username:${WRAPPER_UPGRADE_GIT_TOKEN}@github.com/".insteadOf "https://github.com/"
       - uses: gradle/gradle-build-action@v2
         with:
-          arguments: upgradeMavenWrapperAll --info
+          arguments: upgradeMavenWrapperAll
