@@ -27,6 +27,22 @@ jobs:
           git config --global user.email "team@junit.org"
       - uses: gradle/gradle-build-action@v2
         with:
-          arguments: |
-            upgradeGradleWrapperAll
-            upgradeMavenWrapperAll
+          arguments: upgradeGradleWrapperAll
+  Maven:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: Set up Git
+        run: |
+          git config --global user.name "JUnit Team"
+          git config --global user.email "team@junit.org"
+      - uses: gradle/gradle-build-action@v2
+        with:
+          arguments: upgradeMavenWrapperAll
