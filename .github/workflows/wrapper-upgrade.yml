@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 env:
+  GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GRADLE_ENTERPRISE_ACCESS_KEY }}
   WRAPPER_UPGRADE_GIT_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
