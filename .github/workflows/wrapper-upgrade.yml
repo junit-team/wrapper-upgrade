@@ -21,6 +21,10 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
+      - name: Set up Git
+        run: |
+          git config --global user.name "JUnit Team"
+          git config --global user.email "team@junit.org"
       - uses: gradle/gradle-build-action@v2
         with:
           arguments: |
