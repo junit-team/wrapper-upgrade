@@ -19,7 +19,8 @@ val mavenSampleProjects = listOf(
 )
 
 val gitCommitArgs = listOf(
-    "--author=JUnit Team <team@junit.org>"
+    "--author=JUnit Team <team@junit.org>",
+    "--no-gpg-sign"
 )
 
 wrapperUpgrade {
