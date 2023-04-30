@@ -1,4 +1,4 @@
-name: CI
+name: Upgrade Gradle and Maven Wrappers
 
 on:
   schedule:
@@ -9,7 +9,7 @@ env:
   WRAPPER_UPGRADE_GIT_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
-  Upgrade:
+  Upgrade Wrappers:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
