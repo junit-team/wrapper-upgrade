@@ -4,9 +4,10 @@ plugins {
 }
 
 val gradleRepos = listOf(
-    "junit5",
-    "testng-engine",
-    "wrapper-upgrade",
+    "junit-team/junit5",
+    "junit-team/testng-engine",
+    "junit-team/wrapper-upgrade",
+    "ota4j-team/open-test-reporting",
 )
 
 val gradleSampleProjects = listOf(
@@ -33,7 +34,7 @@ wrapperUpgrade {
     gradle {
         gradleRepos.forEach { repoName ->
             create(repoName) {
-                repo.set("junit-team/${repoName}")
+                repo.set(repoName)
             }
         }
         gradleSampleProjects.forEach { projectName ->
