@@ -33,7 +33,7 @@ val gitCommitArgs = listOf(
 wrapperUpgrade {
     gradle {
         gradleRepos.forEach { repoName ->
-            create(repoName) {
+            create(repoName.replace('/', '-')) {
                 repo.set(repoName)
             }
         }
