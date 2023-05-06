@@ -8,6 +8,7 @@ val gradleRepos = listOf(
     "junit-team/testng-engine",
     "junit-team/wrapper-upgrade",
     "ota4j-team/open-test-reporting",
+    "ota4j-team/opentest4j",
 )
 
 val gradleSampleProjects = listOf(
