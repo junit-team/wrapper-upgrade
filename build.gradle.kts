@@ -1,10 +1,10 @@
 plugins {
     base
-    id("org.gradle.wrapper-upgrade") version "0.11.1"
+    id("org.gradle.wrapper-upgrade") version "0.11.2"
 }
 
 val gradleRepos = listOf(
-//     "junit-team/junit5", // disabled due to https://github.com/gradle/wrapper-upgrade-gradle-plugin/issues/135
+    "junit-team/junit5",
     "junit-team/testng-engine",
     "junit-team/wrapper-upgrade",
     "ota4j-team/open-test-reporting",
