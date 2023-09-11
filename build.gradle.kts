@@ -1,6 +1,6 @@
 plugins {
     base
-    id("org.gradle.wrapper-upgrade") version "0.11.2"
+    id("org.gradle.wrapper-upgrade") version "0.11.3"
 }
 
 val gradleRepos = listOf(
