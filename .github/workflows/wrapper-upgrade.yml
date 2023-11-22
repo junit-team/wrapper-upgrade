@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 21
       - name: Set up Git
         run: |
           git config --global user.name "JUnit Team"
@@ -39,7 +39,7 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 21
       - name: Set up Git
         run: |
           git config --global user.name "JUnit Team"
