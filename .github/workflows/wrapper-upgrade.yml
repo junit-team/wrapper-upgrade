@@ -26,7 +26,7 @@ jobs:
           git config --global user.name "JUnit Team"
           git config --global user.email "team@junit.org"
           git config --global url."https://unused-username:${WRAPPER_UPGRADE_GIT_TOKEN}@github.com/".insteadOf "https://github.com/"
-      - uses: gradle/gradle-build-action@v2
+      - uses: gradle/gradle-build-action@v3
         with:
           arguments: upgradeGradleWrapperAll
   Maven:
@@ -45,6 +45,6 @@ jobs:
           git config --global user.name "JUnit Team"
           git config --global user.email "team@junit.org"
           git config --global url."https://unused-username:${WRAPPER_UPGRADE_GIT_TOKEN}@github.com/".insteadOf "https://github.com/"
-      - uses: gradle/gradle-build-action@v2
+      - uses: gradle/gradle-build-action@v3
         with:
           arguments: upgradeMavenWrapperAll
