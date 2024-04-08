@@ -1,12 +1,9 @@
 plugins {
-    id("com.gradle.enterprise") version "3.17"
+    id("com.gradle.develocity") version "3.17"
 }
 
-gradleEnterprise {
+develocity {
     server = "https://ge.junit.org"
-    buildScan {
-        publishAlways()
-    }
 }
 
 rootProject.name = "junit-wrapper-upgrade"
